@@ -230,22 +230,5 @@ kbd { padding: 2px 6px; border: 1px solid #40516a; border-radius: 5px; backgroun
   }
 
 
-.tools-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.tools-list p {
-  display: block;
-  margin: 0;
-  line-height: 1.8;
-}
-
-.tools-list strong {
-  display: inline;
-}
-
-
    
 }
