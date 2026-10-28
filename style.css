@@ -179,8 +179,6 @@ kbd { padding: 2px 6px; border: 1px solid #40516a; border-radius: 5px; backgroun
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-
-
 /* Reusable project image groups:
    one subtitle across the row, with two images displayed side by side below it. */
 .project-image-group {
@@ -228,7 +226,5 @@ kbd { padding: 2px 6px; border: 1px solid #40516a; border-radius: 5px; backgroun
   .project-image-row {
     grid-template-columns: 1fr;
   }
-
-
    
 }
