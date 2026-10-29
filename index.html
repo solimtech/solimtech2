@@ -265,11 +265,21 @@
 </figure>
 
 <figure class="wide-figure">
-                <figcaption class="centered-caption"><strong>05. Checking Available Disk Space</strong><p>I checked available disk space to determine whether storage limitations could contribute to performance issues.</p></figcaption>
+  <figcaption class="centered-caption"><strong>07. Investigating Windows Update</strong>
+<p>I reviewed the Windows Update status and found that the
+cumulative update for Windows 10 Version 22H2 (KB5066791)
+was installing at 0%. I investigated whether background update activity could be contributing to the slow
+      startup and application performance.</p>
+                </figcaption>
                 <div class="wide-figure-content">
-                  <div class="step-copy"><strong>Step A: Open File Explorer</strong><p>I opened File Explorer by pressing <kbd>Windows</kbd> + <kbd>E</kbd> on the keyboard.</p></div>
+                  <div class="step-copy"><strong>Step A: 07.1. Pending Update Identified </strong><p>I opened File Explorer by pressing <kbd>Windows</kbd> + <kbd>E</kbd> on the keyboard.</p></div>
                   <a href="file explorer.jpg" target="_blank" rel="noopener noreferrer"><img src="file explorer.jpg" alt="File Explorer opened to inspect the computer's drives" loading="lazy"></a>
-                  <div class="step-copy"><strong>Step B: Check free space on Local Disk (C:)</strong><p>I checked the drive capacity and available space. The blue storage bar indicated that the drive was not displaying the red low-space warning.</p></div>
+                  
+                  <div class="step-copy"><strong>Step B: Completing Pending Updates </strong><p> I allowed Windows Update to continue installing the pending
+      update. I monitored the installation progress and followed
+      the restart instructions if prompted. This step helped me
+      investigate whether completing the update would improve
+      system performance.</p></div>
                   <a href="Free space on local disk (C).jpg" target="_blank" rel="noopener noreferrer"><img src="Free space on local disk (C).jpg" alt="Local Disk C showing capacity and available storage space" loading="lazy"></a>
                 </div>
               </figure>
