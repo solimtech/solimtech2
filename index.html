@@ -440,29 +440,49 @@ was installing at 0%. I investigated whether background update activity could be
 
 
   <figure>
-                <figcaption><strong>08. Verify Windows Update Status </strong>
-                  <p><strong>Step A:</strong> 
-                   To check the status of Windows Update, I :<br>
-1. Clicked Start.<br>
-2. Opened the Settings.<br>
-3. Selected Windows Update.<br>
-      I noticed that Windows displays <strong>You're up to date.</strong>
-     </p>
-                </figcaption>
-                <a href="You are up to date.jpg" target="_blank" rel="noopener noreferrer"><img src="You are up to date.jpg" alt="Windows Update showing a pending cumulative update" loading="lazy">
+                <figcaption><strong>04. Initialize User Passwords </strong>
+  <p>
+    
+    I initialized passwords for newly created Active Directory user accounts, establishing their initial login credentials. 
+    I also configured the option requiring users to change their passwords at their next logon.<br>
+
+ <Strong><u>Procedures</u></Strong> 
+
+    > I opened Active Directory Users and Computers (ADUC).<br>
+    > I navigated to <b>Solim.lab.com</b>.<br>
+    > I located the newly created user account.<br>
+    > I right-clicked the account and selected <b> Reset Password</b>.<br>
+    > I entered and confirmed an initial password.<br>
+    > I selected <b> User must change password at next logon</b>.
+    > I confirmed the changes.
+    </p>
+      <figcaption><strong>Screenshot 07: Initializing a User Password</strong></figcaption>
+              
+                <a href="You are up to date.jpg" target="_blank" rel="noopener noreferrer"><img src="You are up to date.jpg" 
+                  alt="Active Directory" loading="lazy">
                 </a>
               </figure>
               <figure>
                 
-                <figcaption><strong>09. Verifying System Performance</strong>
+                <figcaption><strong>05. Reset User Passwords</strong>
   <p>
-      After the update process finished, I checked Windows Update
-      again and restarted the computer. I then tested startup time and application responsiveness to determine whether performance had improved.
-      I also opened Task Manager to check <strong>CPU</strong>,<strong> Memory</strong>,<strong>Disk usage</strong>. I have noticed that the system's performance has improved significantly..
-</p>
+    I performed password resets for existing Active Directory user accounts to restore access when users could no longer sign in. 
+    I updated the account credentials and verified the password reset in Active Directory Users and Computers.
 </figcaption>
+            
+ <Strong><u>Procedures</u></Strong> 
+
+    > I opened Active Directory Users and Computers.<br>
+    > I located an existing test user account.<br>
+    > I right-clicked the account and selected <b> Reset Password </b>.<br>
+    > I entered and confirmed a new password.<br>
+    > I applied the changes.<br>
+    > I verified that the password reset was successful.<br>
+                
+ <figcaption><strong>Screenshot 08: Resetting an Existing User Password</strong></figcaption>
+                
       <a href="Performance Tab.jpg" target="_blank" rel="noopener noreferrer"><img src="Performance Tab.jpg" 
-                      alt="Windows Update showing a pending cumulative update" loading="lazy"> </a>
+                      alt="Active Directory" loading="lazy"> </a>
               </figure>                     
            
   
