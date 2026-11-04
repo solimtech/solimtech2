@@ -337,7 +337,7 @@ was installing at 0%. I investigated whether background update activity could be
 
 <strong>06. Enable and Disable User Account </strong><br>
 
-<strong>07. Perform User Administration Tasks Using Windows Server and Active Directory</strong><br>
+<strong>07. Manage User Group Membership</strong><br>
               
             </p>
 
@@ -493,7 +493,7 @@ was installing at 0%. I investigated whether background update activity could be
       
     > I opened Active Directory Users and Computers.<br>
     > I navigated to <b>Solim.lab.com </b>.<br>
-    >I located the existing user account.<br>
+    > I located the existing user account.<br>
     > I right-clicked the user account.<br>
     > I selected <b>Disable Account</b> to temporarily prevent user access.<br>
     > To restore access, I right-clicked the disabled account and selected <b>Enable Account</b>.<br>
@@ -515,6 +515,50 @@ was installing at 0%. I investigated whether background update activity could be
       <figcaption><strong>Screenshot 10: Enabling a User Account</strong></figcaption>
       <a href="Enable Account.jpg" target="_blank" rel="noopener noreferrer">
         <img src="Enable Account.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure>     
+
+   <figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>07. Manage User Group Membership </strong>
+    <p>
+    I organized Active Directory users into security groups by adding or removing user accounts. 
+      This allows administrators to assign permissions, manage access rights, and control access to shared network resources.
+    
+    <Strong><u>Procedures</u></Strong>
+      
+    > I opened Active Directory Users and Computers.<br>
+    > I navigated to <b>Solim.lab.com </b>.<br>
+    > I located the existing user account.<br>
+    > I right-clicked the user account and selected <b> Properties</b>.<br>
+    > I opened the <b>Member Of</b> tab.<br>
+    > I clicked <b>Add</b> to assign the user to a security group.
+    > I entered the group name <b>Finance_Staff</b> <br>
+    > I clicked <b>Check Names</b>, then <b>OK</b>.<br>
+    > To remove a user, I double clicked the group.<br>
+    > I clicked <b>Members</b> tab and selected the user's name and clicked <b>Remove</b> button.<br>
+    > I verified the updated group membership by opening the <b>Member Of</b> tab of the  security group and saw the user's name.
+    
+    </p>
+    </figcaption>
+    
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 11: Adding a User to the Finance Staff Group </strong></figcaption>
+      <a href="Adding a User.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Adding a User.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+
+    <figure>
+      <figcaption><strong>Screenshot 12: Verifying Group Membership</strong></figcaption>
+      <a href="Verifying Group Membership.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Verifying Group Membership.jpg"
              alt="Active Directory"
              loading="lazy">
       </a>
