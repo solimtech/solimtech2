@@ -244,4 +244,13 @@ kbd { padding: 2px 6px; border: 1px solid #40516a; border-radius: 5px; backgroun
   display: inline;
   color: #b8d4ff;
 }
+
+
+   .conclusion p {
+    text-align: center !important;
+}
+
+.conclusion h3 {
+    text-align: center !important;
+}
 }
