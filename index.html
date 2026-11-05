@@ -561,17 +561,6 @@ was installing at 0%. I investigated whether background update activity could be
 </figure> 
   
 <!--<div class="conclusion">-->
-
-<!--<figure class="wide-figure">
-  <figcaption class="centered-caption"><strong>10.Document the Results </strong>  </figcaption>
-  <div class="centered-caption">
-        <p> After completing Windows updates, I verified the update status and monitored 
-        system resource usage through Task Manager. I checked CPU, memory, 
-        and disk utilization to evaluate system performance and confirm that no major performance issues remained.
-        </p>                                     
-  </div>   
-  </div>
-</article>-->
   
 <figure class="wide-figure">
   <figcaption class="centered-caption"><strong>Conclusion </strong> </figcaption>
@@ -590,6 +579,276 @@ was installing at 0%. I investigated whether background update activity could be
 </article>
       
 <br>
+=====================================
+<div class="projects-list">
+          <article class="project-card" id="windows-help-desk-lab">
+            <div class="project-top">
+              <span class="project-number">PROJECT 03</span>
+              <span class="project-status">Completed</span>
+            </div>
+            
+ <h3 class="project-title">Windows Server Update Services (WSUS) Administration Lab</h3>
+            <p class="project-summary">
+    I have practical knowledge of Windows Server Update Services (WSUS) and its role in centralized Windows update management. 
+    I can configure WSUS settings, synchronize updates from Microsoft Update, organize client computers into groups, review and approve updates, 
+    configure update policies through Group Policy, and monitor client update status. 
+   I can also manage Windows update deployments and troubleshoot common update-related issues in an organizational environment. <br>
+
+<strong><u>Skills demonstrated</u> </strong><br>
+
+<strong>01. WSUS server configuration and administration </strong><br>
+
+<strong> 02. Update synchronization and management.</strong><br>
+
+<strong>03. Update approval and deployment.</strong><br>
+
+<strong>04. Computer group management. </strong><br>
+
+<strong>05.Group Policy configuration.</strong><br>
+
+<strong>06.Monitor Update Installation Status.</strong><br>
+           
+            </p>
+
+<div class="screenshot-grid">
+  
+<figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>01. Create user accounts</strong>
+    <p>
+      I created and managed user accounts in Active Directory using the Active Directory Users and Computers (ADUC) console.
+    </p>
+  </figcaption>
+
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 01: Users Accounts</strong></figcaption>
+      <a href="users accounts.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="users accounts.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+
+    <figure>
+      <figcaption><strong>Screenshot 02: Creating a New User Account </strong></figcaption>
+      <a href="New User account creation.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="New User account creation.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure>
+
+  <figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>02. Organize and Manage Security Groups</strong>
+    <p>
+     I created and organized security groups in Active Directory to manage users and simplify access control. 
+      I added user accounts to the appropriate groups—such as "IT_Support" and "Finance_Staff " in order to categorize 
+      users based on their roles and responsibilities.
+    </p>
+  </figcaption>
+
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 03: Security Group Creation </strong></figcaption>
+      <a href="Security Group Creation.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Security Group Creation.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+
+    <figure>
+      <figcaption><strong>Screenshot 04: Managing Security Group Membership</strong></figcaption>
+      <a href="Managing Security Group Membership.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Managing Security Group Membership.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure>
+
+  <figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>03. Configure User Permissions and Access Control </strong>
+    <p>
+     I configured user access and permissions in Windows Server by assigning access rights to both individual users 
+      and security groups. I managed permissions for shared folders and organizational resources, 
+      ensuring that users had the appropriate level of access based on their roles and responsibilities.<br>
+     
+      <Strong><u>Procedures</u></Strong> 
+
+    > I created a shared folder named <b>Share 1</b>.<br>
+    > I opened the folder's Properties window.<br>
+    > I navigated to the <b>Security</b> tab.<br>
+    > I added the <b>Finance Staff </b> security group.<br>
+    > I assigned appropriate permissions, such as Read.<br>
+    > I verified folder access using a test user account.
+    </p>
+  </figcaption>
+
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 05: Configuring Folder Permissions </strong></figcaption>
+      <a href="Configuring Folder Permissions.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Configuring Folder Permissions.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+
+    <figure>
+      <figcaption><strong>Screenshot 06: Advanced Security Permissions</strong></figcaption>
+      <a href="Advanced Security Permissions.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Advanced Security Permissions.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure>
+<figure>
+                <figcaption><strong>04. Initialize User Passwords </strong></figcaption>  
+  <p>
+    
+    I initialized passwords for newly created Active Directory user accounts, establishing their initial login credentials. 
+    I also configured the option requiring users to change their passwords at their next logon.<br>
+
+ <Strong><u>Procedures</u></Strong><br> 
+
+    > I opened Active Directory Users and Computers (ADUC).<br>
+    > I navigated to <b>Solim.lab.com</b>.<br>
+    > I initialized new User Passwords while creating his account.<br>
+    > I selected <b> User must change password at next logon</b>.<br>
+    > I clicked <b>Next</b>.<br>
+    > I clicked <b>Finish</b>.<br>
+    </p>
+<p style="color: #9AA9BD; font-weight: bold;">Screenshot 07: Initializing a User Password</p> 
+  
+    <a href="Initialize User Passwords.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="Initialize User Passwords.jpg" alt="Active Directory" loading="lazy">
+    </a>
+  </figure>
+              
+  <figure>
+                <figcaption><strong>05. Reset User Passwords</strong> </figcaption>  
+  <p>
+    I performed password resets for existing Active Directory user accounts to restore access when users could no longer sign in. 
+    I updated the account credentials and verified the password reset in Active Directory Users and Computers.<br> 
+     
+    <Strong><u>Procedures</u></Strong><br>  
+
+    > I opened Active Directory Users and Computers.<br>
+    > I located an existing test user account.<br>
+    > I right-clicked the account and selected <b> Reset Password </b>.<br>
+    > I entered the new password.<br>
+    > I clicked <b>OK</b>.<br>
+    </p> 
+<p style="color: #9AA9BD; font-weight: bold;">Screenshot 08: Resetting an Existing User Password</p> 
+                
+      <a href="Resetting an Existing User Password.jpg" target="_blank" rel="noopener noreferrer"><img src="Resetting an Existing User Password.jpg" 
+                      alt="Active Directory" loading="lazy"> </a>
+ </figure>   
+                   
+  <figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>06. Enable and Disable User Accounts</strong>
+    <p>
+    I have configured Active Directory user accounts by enabling or disabling them using the "Active Directory Users and Computers" (ADUC) tool. 
+      This allows administrators to manage user access to network resources and maintain account security.
+    
+    <Strong><u>Procedures</u></Strong>
+      
+    > I opened Active Directory Users and Computers.<br>
+    > I navigated to <b>Solim.lab.com </b>.<br>
+    > I located the existing user account.<br>
+    > I right-clicked the user account.<br>
+    > I selected <b>Disable Account</b> to temporarily prevent user access.<br>
+    > To restore access, I right-clicked the disabled account and selected <b>Enable Account</b>.<br>
+    > I verified the account status.
+    </p>
+    </figcaption>
+    
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 09: Disabling a User Account </strong></figcaption>
+      <a href="Disable Account.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Disable Account.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+
+    <figure>
+      <figcaption><strong>Screenshot 10: Enabling a User Account</strong></figcaption>
+      <a href="Enable Account.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Enable Account.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure>     
+
+   <figure class="wide-figure">
+  <figcaption class="centered-caption">
+    <strong>07. Manage User Group Membership </strong>
+    <p>
+    I organized Active Directory users into security groups by adding or removing user accounts. 
+      This allows administrators to assign permissions, manage access rights, and control access to shared network resources.
+    
+    <Strong><u>Procedures</u></Strong>
+      
+    > I opened Active Directory Users and Computers.<br>
+    > I navigated to <b>Solim.lab.com </b>.<br>
+    > I located the existing user account.<br>
+    > I right-clicked the user account and selected <b> Properties</b>.<br>
+    > I opened the <b>Member Of</b> tab.<br>
+    > I clicked <b>Add</b> to assign the user to a security group.
+    > I entered the group name <b>Finance_Staff</b> <br>
+    > I clicked <b>Check Names</b>, then <b>OK</b>.<br>
+    > To remove a user, I double clicked the group.<br>
+    > I clicked <b>Members</b> tab and selected the user's name and clicked <b>Remove</b> button.<br>
+    > I verified the updated group membership by opening the <b>Member Of</b> tab of the  security group and saw the user's name.
+    
+    </p>
+    </figcaption>
+    
+  <div class="project-image-row">
+    <figure>
+      <figcaption><strong> Screenshot 11: Adding a User to the Finance Staff Group </strong></figcaption>
+      <a href="Adding a User to a group.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Adding a User to a group.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+    </figure>
+    <figure>
+      <figcaption><strong>Screenshot 12: Verifying Group Membership</strong></figcaption>
+      <a href="Verifying Group Membership.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Verifying Group Membership.jpg"
+             alt="Active Directory"
+             loading="lazy">
+      </a>
+  </div>
+</figure> 
+<figure class="wide-figure">
+  <figcaption class="centered-caption"><strong>Conclusion </strong> </figcaption>
+  <div class="centered-caption">
+  <p>
+  This project demonstrates my practical experience in Windows Server administration and Active Directory user management, 
+  building on responsibilities I have handled in different organizational environments. 
+  Throughout my professional experience, I have performed essential IT administration tasks, including creating and managing user accounts, 
+  organizing security groups, resetting passwords, and configuring folder permissions.
+   These responsibilities reflect real-world IT operations across different companies and educational environments. 
+    My experience has strengthened my ability to manage user accounts, control access to organizational resources, and 
+    maintain reliable IT services using Active Directory and Windows Server.</p>
+ 
+   </div>                                           
+  </div>
+</article>
+
+  =====================
           <article class="project-card" id="network-troubleshooting-lab">
             <div class="project-top">
               <span class="project-number">PROJECT 03</span>
