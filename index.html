@@ -749,22 +749,22 @@ was installing at 0%. I investigated whether background update activity could be
                 <figcaption><strong>03. Create Computer Groups.</strong></figcaption>  
   <p>
     
-    I initialized passwords for newly created Active Directory user accounts, establishing their initial login credentials. 
-    I also configured the option requiring users to change their passwords at their next logon.<br>
+    I created and configured computer groups in Windows Server Update Services (WSUS) to organize client computers into logical groups. 
+    This allows administrators to manage update deployments, approve updates, and control which updates are installed on specific computers.<br>
 
- <Strong><u>Procedures</u></Strong><br> 
+ <Strong><u>Steps</u></Strong><br> 
 
-    > I opened Active Directory Users and Computers (ADUC).<br>
-    > I navigated to <b>Solim.lab.com</b>.<br>
-    > I initialized new User Passwords while creating his account.<br>
-    > I selected <b> User must change password at next logon</b>.<br>
-    > I clicked <b>Next</b>.<br>
-    > I clicked <b>Finish</b>.<br>
+    > I opened Open the WSUS Administration Console.<br>
+    > I expanded your WSUS server.<br>
+    > I right-clicked <b>All Computers</b>.<br>
+    > I selected <b>Add Computer Group</b>.<br>
+    > I entered a group name, for example: <b>IT department Computers</b>.<br>
+    > I clicked <b>Add</b>.<br>
     </p>
-<p style="color: #9AA9BD; font-weight: bold;">Screenshot 07: Initializing a User Password</p> 
+<p style="color: #9AA9BD; font-weight: bold;">Screenshot 05: Creating WSUS Computer Group</p> 
   
-    <a href="Initialize User Passwords.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="Initialize User Passwords.jpg" alt="Active Directory" loading="lazy">
+    <a href="Create Computer Groups.JPG" target="_blank" rel="noopener noreferrer">
+      <img src="Create Computer Groups.JPG" alt="Active Directory" loading="lazy">
     </a>
   </figure>
               
