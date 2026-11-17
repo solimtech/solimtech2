@@ -604,7 +604,7 @@ was installing at 0%. I investigated whether background update activity could be
 
 <strong>03. Create Computer Groups. </strong><br>
 
-<strong>04.Configure Group Policy.</strong><br>
+<strong>04.Configure Group Policy (GPO) for WSUS Clients.</strong><br>
 
 <strong>05.Approve Updates.</strong><br>
 
@@ -769,18 +769,19 @@ was installing at 0%. I investigated whether background update activity could be
   </figure>
               
   <figure>
-                <figcaption><strong>04. Configure Group Policy.</strong> </figcaption>  
+                <figcaption><strong>04.Configure Group Policy (GPO) for WSUS Clients.</strong> </figcaption>  
   <p>
-    I performed password resets for existing Active Directory user accounts to restore access when users could no longer sign in. 
-    I updated the account credentials and verified the password reset in Active Directory Users and Computers.<br> 
+     I created and configured Group Policy Objects (GPOs) in Windows Server Active Directory to direct domain computers to the WSUS server for Windows updates. 
+    Configured Windows Update policies to specify the intranet update service location, enabling client computers to receive updates from the centralized
+    WSUS server rather than directly from Microsoft Update.<br> 
      
     <Strong><u>Procedures</u></Strong><br>  
 
-    > I opened Active Directory Users and Computers.<br>
-    > I located an existing test user account.<br>
-    > I right-clicked the account and selected <b> Reset Password </b>.<br>
-    > I entered the new password.<br>
-    > I clicked <b>OK</b>.<br>
+    > I opened Opened Group Policy Management Console (Server Manager → Tools → Group Policy Management).<br>
+    > I created and configured a dedicated GPO for WSUS clients.<br>
+    > I configured the WSUS policy (Computer Configuration → Policies → Administrative Templates → Windows Components → Windows Update).<br>
+    > I entered WSUS server address. <br>
+    > I applied and verified the policy (On a domain client computer, I ran: gpupdate /force, then verified the applied policy by running: gpresult /r.)<br>
     </p> 
 <p style="color: #9AA9BD; font-weight: bold;">Screenshot 08: Resetting an Existing User Password</p> 
                 
