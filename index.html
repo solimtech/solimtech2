@@ -793,35 +793,41 @@ was installing at 0%. I investigated whether background update activity could be
   <figcaption class="centered-caption">
     <strong>05.Approve Updates.</strong>
     <p>
-    I have configured Active Directory user accounts by enabling or disabling them using the "Active Directory Users and Computers" (ADUC) tool. 
-      This allows administrators to manage user access to network resources and maintain account security.
-    
+   Selected and reviewed available Windows updates from the WSUS Administration Console and approved them for 
+      installation on designated client computers. Managed update approvals through WSUS computer groups to 
+      control which updates were deployed across the network. This helped ensure that domain computers received the 
+      appropriate security updates and system improvements.
+
     <Strong><u>Procedures</u></Strong>
       
-    > I opened Active Directory Users and Computers.<br>
-    > I navigated to <b>Solim.lab.com </b>.<br>
-    > I located the existing user account.<br>
-    > I right-clicked the user account.<br>
-    > I selected <b>Disable Account</b> to temporarily prevent user access.<br>
-    > To restore access, I right-clicked the disabled account and selected <b>Enable Account</b>.<br>
-    > I verified the account status.
+    > I openned <b>Server Manager</b>.<br>
+    > I selected <b> Tools </b>.<br>
+    > I clicked <b>Windows Server Update Services</b>.<br>
+    > I clicked <b> all Updates</b>.<br>
+    > I I set the Approval filter to <b>Unapproved</b>.<br>
+    > I clicked <b>Refresh</b>.<br>
+    > I selected the appropriate updates for client operating system.<br>
+    >  I clicked <b>Approve</b>.<br>
+    > I Selected <b> Approved for Install </b>.<br>
+    > I clicked<B> OK</B>.
+      
     </p>
     </figcaption>
     
   <div class="project-image-row">
     <figure>
-      <figcaption><strong> Screenshot 09: Disabling a User Account </strong></figcaption>
-      <a href="Disable Account.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="Disable Account.jpg"
+      <figcaption><strong> Screenshot 09: all Updates  </strong></figcaption>
+      <a href="All updates.JPG" target="_blank" rel="noopener noreferrer">
+        <img src="All updates.JPG"
              alt="Active Directory"
              loading="lazy">
       </a>
     </figure>
 
     <figure>
-      <figcaption><strong>Screenshot 10: Enabling a User Account</strong></figcaption>
-      <a href="Enable Account.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="Enable Account.jpg"
+      <figcaption><strong>Screenshot 10: Approved for Install</strong></figcaption>
+      <a href="Approved for install.JPG" target="_blank" rel="noopener noreferrer">
+        <img src="Approved for install.JPG"
              alt="Active Directory"
              loading="lazy">
       </a>
