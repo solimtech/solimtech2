@@ -838,23 +838,17 @@ was installing at 0%. I investigated whether background update activity could be
   <figcaption class="centered-caption">
     <strong>06. Monitor Client Update Status </strong>
     <p>
-    I organized Active Directory users into security groups by adding or removing user accounts. 
-      This allows administrators to assign permissions, manage access rights, and control access to shared network resources.
+    I monitored client update status using Windows Server Update Services (WSUS) to verify whether client computers successfully detected, downloaded, and installed approved Windows updates. 
+      I also reviewed update reports to identify missing, failed, and pending updates.
     
     <Strong><u>Procedures</u></Strong>
       
-    > I opened Active Directory Users and Computers.<br>
-    > I navigated to <b>Solim.lab.com </b>.<br>
-    > I located the existing user account.<br>
-    > I right-clicked the user account and selected <b> Properties</b>.<br>
-    > I opened the <b>Member Of</b> tab.<br>
-    > I clicked <b>Add</b> to assign the user to a security group.
-    > I entered the group name <b>Finance_Staff</b> <br>
-    > I clicked <b>Check Names</b>, then <b>OK</b>.<br>
-    > To remove a user, I double clicked the group.<br>
-    > I clicked <b>Members</b> tab and selected the user's name and clicked <b>Remove</b> button.<br>
-    > I verified the updated group membership by opening the <b>Member Of</b> tab of the  security group and saw the user's name.
-    
+    > In <b>Server manager</b>, I opened <b>Tools</b> and selected <b>Windows Server Update Services</b>.<br>
+    > I navigated to <b>Computers</b> → <b>All Computers</b>.<br>
+    > I selected <b>Windows 10 clients </b> group.<br>
+    > I verified that the <b>Windows 10 clients</b> computers appears in the list of registered computers.<br>
+    > I reviewed the computer's update status, including installed, needed, and failed updates.<br>
+    > I verified that the client has successfully reported its update status to the WSUS server.<br>
     </p>
     </figcaption>
     
