@@ -922,29 +922,65 @@ These activities help maintain system security, keep computers up to date, and e
                     <img src="Testing Local Network Connectivity.JPG" alt="Network Connectivity Troubleshooting Lab" loading="lazy">
                   </a>
                     
-                  <div class="step-copy"><strong>Step B: Check free space on Local Disk (C:)</strong><p>I checked the drive capacity and available space. The blue storage bar indicated that 
-                    the drive was not displaying the red low-space warning.Here is the screenshot on the right.</p></div>
-                  <a href="Free space on local disk (C).jpg" target="_blank" rel="noopener noreferrer"><img src="Free space on local disk (C).jpg" alt="Local Disk C showing capacity and available storage space" loading="lazy"></a>
+                  <div class="step-copy"><strong><b><i>Step 2. Test Default Gateway Connectivity</i></b></strong>   
+               
+                    <p>Next, I tested communication between my windows 10 client computer and the default gateway 
+                      to verify connectivity to the local network by using the following command:
+                     > I entered <b> ipconfig</b>,<br>
+                     > I pressed <b>Enter</b>,<br>
+                     > I identified the <b>Default Gateway</b> address (10.0.0.1), <br>
+                     > I ran <b>ping 10.0.0.1</b>,<br>
+                     >  I pressed <b>Enter</b>,<br>
+                    
+                    </p></div>
+                  <a href="Testing Default Gateway Connectivity.JPG" target="_blank" rel="noopener noreferrer"><img src="Testing Default Gateway Connectivity.JPG" 
+                  alt="Network Connectivity Troubleshooting Lab" loading="lazy">
+                  </a>
+
+                    <div class="step-copy"><strong><b><i>Step 3. Test Windows Server Connectivity</i></b></strong>   
+               
+                    <p>Next, I tested network communication between my windows 10 client computer and the Windows Server (10.0.0.130) 
+                     to verify connectivity between both systems by using the following command:
+                     > I entered <b> ping 10.0.0.130</b>,<br>
+                     > I pressed <b>Enter</b>,<br>
+                     > I reviewed the results to verify communication between the client and Windows Server. <br>
+                      
+                    </p>
+                    </div>
+                  <a href="Testing Windows Server Connectivity.JPG" target="_blank" rel="noopener noreferrer"><img src="Testing Windows Server Connectivity.JPG" 
+                  alt="Network Connectivity Troubleshooting Lab" loading="lazy">
+                  </a>
+                    <div class="step-copy"><strong><b><i>Step 4. Test External Network Connectivity</i></b></strong>   
+               
+                    <p>
+                      Next, I tested connectivity to an external IP address to verify whether 
+                      the client computer could reach resources outside the local network by using the following command:
+                     > I entered <b> ping 8.8.8.8</b> which is Google Public DNS,<br>
+                     > I pressed <b>Enter</b>,<br>
+                     > I reviewed the results to determine whether the client can communicate with an external network address. <br>
+                      
+                    </p>
+                    </div>
+                  <a href="Testing External Network Connectivity.JPG" target="_blank" rel="noopener noreferrer"><img src="Testing External Network Connectivity.JPG" 
+                  alt="Network Connectivity Troubleshooting Lab" loading="lazy">
+                  </a>
+                     <div class="step-copy"><strong><b><i>Step 5. Test DNS Name Resolution</i></b></strong>   
+               
+                    <p>
+                     Then, I tested DNS name resolution to verify that the client computer could translate 
+                      domain names into IP addresses. by using the following command:
+                     > I entered <b> ping google.com</b>,<br>
+                     > I pressed <b>Enter</b>,<br>
+                     > I reviewed the results to verify whether the domain name resolves to an IP address and responds to ping requests. <br>
+                      
+                    </p>
+                    </div>
+                  <a href="Testing DNS Name Resolution.JPG" target="_blank" rel="noopener noreferrer"><img src="Testing DNS Name Resolution.JPG" 
+                  alt="Network Connectivity Troubleshooting Lab" loading="lazy">
+                  </a>
                 </div>
               </figure>   
               
-              <!--  <figure>
-                <Strong><u>Objective: </u></Strong><br>
-               <p>I used network diagnostic commands to test communication between the Windows client, 
-                 default gateway, and Windows Server.</p></figcaption> <br>
-                
-                <Strong><u>Procedure: </u></Strong><br>
-              <b><i>Step 1. Test Local Network Connectivity</i></b>
-              > I openned <b>Command Prompt </b> on my Windows 10 client,
-              > I entered the following command : <b> ping 127.0.0.1 </b>,
-              > I pressed <b>Enter</b>,
-              > I reviewed the results to verify that the local TCP/IP stack is responding. <br>
-
-                <a href="Testing Local Network Connectivity.jpg" target="_blank" rel="noopener noreferrer">
-                  <img src="Testing Local Network Connectivity.jpg" alt="Network Connectivity Troubleshooting Lab" loading="lazy"></a>
-              </figure>
-              <figure>
-                </figcaption> -->
               <br>
 
                 
