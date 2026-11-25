@@ -901,19 +901,27 @@ These activities help maintain system security, keep computers up to date, and e
                   <Strong><u>Introduction</u></Strong> 
                   <p>Network connectivity testing is used to determine whether a computer can successfully communicate with other devices on a network. 
                     The <b> Ping </b> command helps verify connectivity and identify potential communication problems.</p>
-                  <Strong><u>Objective: </u></Strong>
+                  <Strong><u>Objective </u></Strong>
                <p>I used network diagnostic commands to test communication between the Windows client, 
                  default gateway, and Windows Server.</p>
-                
-                  <Strong><u>Procedure: </u></Strong>
+                  <Strong><u>Procedures </u></Strong>
                 </figcaption> 
                 
                 </figcaption>
                
                   <div class="wide-figure-content">
-                  <div class="step-copy"><strong>Step A: Open File Explorer</strong><p>I opened File Explorer by pressing <kbd>Windows</kbd> + <kbd>E</kbd> on the keyboard.
-                  Here is the screenshot on the right.</p></div>
-                  <a href="file explorer.jpg" target="_blank" rel="noopener noreferrer"><img src="file explorer.jpg" alt="File Explorer opened to inspect the computer's drives" loading="lazy"></a>
+                  <div class="step-copy"><strong><b><i>Step 1. Test Local Network Connectivity</i></b></strong>
+                    <p> 
+                     > I openned <b>Command Prompt </b> on my Windows 10 client,
+                     > I entered the following command : <b> ping 127.0.0.1 </b>,
+                     > I pressed <b>Enter</b>,
+                     > I reviewed the results to verify that the local TCP/IP stack is responding.
+                    </p>
+                  </div>
+                  <a href="Testing Local Network Connectivity.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="Testing Local Network Connectivity.jpg" alt="Network Connectivity Troubleshooting Lab" loading="lazy">
+                  </a>
+                    
                   <div class="step-copy"><strong>Step B: Check free space on Local Disk (C:)</strong><p>I checked the drive capacity and available space. The blue storage bar indicated that 
                     the drive was not displaying the red low-space warning.Here is the screenshot on the right.</p></div>
                   <a href="Free space on local disk (C).jpg" target="_blank" rel="noopener noreferrer"><img src="Free space on local disk (C).jpg" alt="Local Disk C showing capacity and available storage space" loading="lazy"></a>
@@ -921,12 +929,6 @@ These activities help maintain system security, keep computers up to date, and e
               </figure>   
               
               <!--  <figure>
-                <figcaption><strong>03. Test Network Connectivity </strong>
-                  <br>
-                  <Strong><u>Introduction : </u></Strong><br>
-                  <p>Network connectivity testing is used to determine whether a computer can successfully communicate with other devices on a network. 
-                    The <b> Ping </b> command helps verify connectivity and identify potential communication problems.</p>
-                  
                 <Strong><u>Objective: </u></Strong><br>
                <p>I used network diagnostic commands to test communication between the Windows client, 
                  default gateway, and Windows Server.</p></figcaption> <br>
